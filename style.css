@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-font{
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1rem;
+  font-style: normal;
+}
+/* shared  */
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #F7F7F7;
+}
+
+.banner,.nav,.Curriculum{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.flex{
+    display: flex;
+}
+.description{
+    font-size: 1.25rem;
+}
+.btn{
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 12px;
+
+}
+
+/* nav */
+.nav{
+
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.logo{
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-items>ul{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+.nav-items>ul>a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#nav-a-1{
+    color: #FEA301;
+}
+#nav-a-2{
+    color: #01ACFD;
+}
+#nav-a-3{
+    color: #05D4DF;
+}
+#nav-a-4{
+    color: #5D58EF;
+}
+.nav i{
+    display: none;
+}
+.nav-btn{
+    color: white;
+    padding: 10px 60px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #FEA301;
+    border-radius: 12px;
+    border: none;
+}
+
+/* banner */
+.banner{
+    align-items: center;
+    gap: 50px;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+#highlight-1{
+    color: #FEA301;
+}
+#highlight-2{
+    color: #05D4DF;
+}
+.banner-description{
+    margin: 24px auto;
+}
+.banner-details>button{
+    padding: 10px 47px;
+}
+
+/* main */
+/* curriculum */
+
+.Curriculum{
+    background-image: url(/assets/bg.png);
+    margin-top: 60px;
+}
+.curriculum-title{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.curriculum-container{
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 29px;
+    text-align: center; 
+}
+.curriculum-container img{
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.curriculum-container>h2{
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.curriculum-container p{
+    margin:28px 35px;
+}
+.curriculum-box{
+    border-radius: 18px;
+}
+.curriculum-box img,.curriculum-box h2,.curriculum-box p{
+    background: none;
+}
+#box-1-p,#box-2-p,#box-3-p{
+   font-size: 1rem;
+   font-weight: bold;  
+}
+#box-1-p{
+    color: #64C8FF;
+}
+#box-2-p{
+    color: #F0AA00;
+}
+#box-3-p{
+    color: #8700FF;
+}
+#box-1{
+    background: linear-gradient( to bottom , #e3f3ff,white,white,white);
+}
+#box-2{
+    background: linear-gradient( to bottom ,rgba(198, 121, 77, .3),white,white,white);
+}
+#box-3{
+    background: linear-gradient( to bottom , rgba(164, 74, 160, .3),white,white,white);
+}
+
+.circles{
+    gap: 10px;
+    justify-content: center;
+}
+.circles i{
+    border-radius: 50%;
+    padding: 17px 22px;
+    color: white;
+    border: none;
+    background-color: #FEA301;
+}
+
+/* mobile */
+@media screen and (max-width: 576px)
+{
+    .banner,.Curriculum{
+        padding: 0%;
+        margin: auto 17px;
+        width: calc(100% - 34px);
+    }
+    header{
+        text-align: center;
+    }
+    .nav-items,.nav-btn,.title{
+        display: none;
+    }
+    .nav{
+        margin:0px;
+        padding: 10px 17px;
+        border-bottom: 1px solid #FEA301;    
+    }
+    .nav i{
+        display:block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .curriculum-title{
+        margin-top: 50px;
+    }
+    .curriculum-container
+    {
+        margin-top: 30px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .circles{
+        display: none;
+    }
+}
