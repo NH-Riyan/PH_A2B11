@@ -19,12 +19,15 @@
 *{
     margin: 0%;
     padding: 0%;
+    
+}
+body{
     background-color: #F7F7F7;
 }
-
-.banner,.nav,.Curriculum,.stories{
+.banner,.nav,.Curriculum,.stories,.footer-part{
     margin-left: 140px;
     margin-right: 140px;
+    
 }
 .flex{
     display: flex;
@@ -217,7 +220,6 @@
     font-weight: bold;
     margin-bottom: 45px;
 }
-
 .story-box{
     border-radius: 16px;
 }
@@ -286,10 +288,57 @@
     padding: 10px 61px;
 }
 
+/* footer */
+footer{
+    background-color:#01ACFD;
+    color: white;
+    padding-bottom: 172px;
+    padding-top: 123px;
+}
+.footer-part{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 90px;
+}
+.left-part-heading{
+   margin-bottom: 35px;
+}
+.left-part-title{
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.left-part img{
+    width: 40%;
+    object-fit: cover;
+    color: white;
+    /* mix-blend-mode:overlay; */
+    /* filter: brightness(1) invert(); */
+}
+.middle-part{
+    text-align: center;
+}
+.middle-part h4{
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.middle-part ul{
+    flex-direction: column;
+}
+.middle-part a{
+    margin: 11px auto;
+    text-decoration: none;
+    color: white;
+}
 
-
-
-
+.right-part h4{
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 1.55rem;
+}
+.right-part img{
+    margin-right: 7px;
+}
 
 /* mobile */
 @media screen and (max-width: 576px)
@@ -332,7 +381,6 @@
         display: none;
     }
 
-
      .stories{
         margin-bottom: 80px;
     }
@@ -346,7 +394,7 @@
     #story-box-1{
         display: none;
     }
-    .story-container > .story-box{
+    .story-box{
         border-radius:22px;
     }
     .story-box img{
@@ -354,8 +402,9 @@
         border-top-right-radius: 9px ;
     }
     .story-container-2 h4{
+        border-radius: 22px;
         margin: 0;
-      padding: 32px 15px ;
+        padding: 32px 15px ;
     }
     
     .story-container-2 img{
@@ -363,7 +412,7 @@
     }
     .story-container-2{
         grid-template-columns: repeat(2,1fr);
-        gap: 8px;
+        gap: 10px;
     }
     .story-container-2 .date{
         margin-top: -19px;
