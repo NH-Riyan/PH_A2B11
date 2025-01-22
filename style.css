@@ -284,7 +284,7 @@ body{
     font-weight: bold;
 }
 .stories-btn{
-    justify-self: center;
+    justify-content: center;
 }
 .stories button{
     padding: 10px 61px;
@@ -327,7 +327,7 @@ footer{
     flex-direction: column;
 }
 .middle-part a{
-    margin: 11px auto;
+    margin: 15px auto;
     text-decoration: none;
     color: white;
 }
